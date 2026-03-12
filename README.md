@@ -1,9 +1,7 @@
 # logggggoff
 
 [![npm version](https://img.shields.io/npm/v/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
-[![npm downloads](https://img.shields.io/npm/dm/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
-[![npm downloads total](https://img.shields.io/npm/dt/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
-[![license](https://img.shields.io/npm/l/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
+[![npm downloads per week](https://img.shields.io/npm/dw/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
 
 A colorful, cross-platform CLI tool designed to help you **list**, **understand**, and **log off** running processes, grouped into helpful categories.
 
@@ -62,25 +60,4 @@ logggggoff 525 run
 This will attempt to gracefully stop the process with PID `525` and print a success or error message.
 
 > **Note**: Use this carefully. Always double-check the PID before terminating a process.
-
-## Tags
-
-This package is discoverable on npm using the following tags:
-
-- **cli**
-- **logoff**
-- **process**
-- **process-logger**
-- **productivity**
-- **shutdown**
-- **cross-platform**
-- **developer-tool**
-- **the-rise-collection**
-- **processLogger**
-
-## Links
-
-- **Homepage**: [processLogger – THE RISE COLLECTION](https://www.therisecollection.co/portfolio/processlogger)
-- **npm**: [`logggggoff`](https://www.npmjs.com/package/logggggoff)
-- **GitHub**: [`TheRiseCollection/logg-off-plugin`](https://github.com/TheRiseCollection/logg-off-plugin)
 
