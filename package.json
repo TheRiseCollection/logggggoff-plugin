@@ -1,7 +1,7 @@
 {
   "name": "logggggoff",
-  "version": "1.0.2",
-  "description": "A CLI tool designed to help list running processes",
+  "version": "1.0.3",
+  "description": "A colorful, cross-platform CLI tool to list and log off running processes.",
   "main": "index.js",
   "bin": {
     "logggggoff": "./index.js"
@@ -16,16 +16,21 @@
   "keywords": [
     "cli",
     "logoff",
+    "process",
+    "process-logger",
     "productivity",
     "shutdown",
-    "cross-platform"
+    "cross-platform",
+    "developer-tool",
+    "the-rise-collection",
+    "processLogger"
   ],
   "author": "Joshua Paulsen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TheRiseCollection/logg-off-plugin/issues"
   },
-  "homepage": "https://github.com/TheRiseCollection/logg-off-plugin#readme",
+  "homepage": "https://www.therisecollection.co/portfolio/processlogger",
   "dependencies": {
     "chalk": "^4.1.2",
     "inquirer": "^8.2.4",

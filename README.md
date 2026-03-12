@@ -1,21 +1,86 @@
 # logggggoff
 
-A colorful, cross-platform CLI tool designed to help list running processes, categorized.
+[![npm version](https://img.shields.io/npm/v/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
+[![npm downloads](https://img.shields.io/npm/dm/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
+[![npm downloads total](https://img.shields.io/npm/dt/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
+[![license](https://img.shields.io/npm/l/logggggoff.svg)](https://www.npmjs.com/package/logggggoff)
+
+A colorful, cross-platform CLI tool designed to help you **list**, **understand**, and **log off** running processes, grouped into helpful categories.
+
+Part of the **processLogger** tooling from [THE RISE COLLECTION](https://www.therisecollection.co/portfolio/processlogger).
 
 ## Features
-- Lists all running processes
-- Supports "single process shutdown"
-- Supports "Graceful shutdown"
-- Supports Windows, macOS and Linux
+- **Categorized process list**: Quickly see running processes grouped as Browser, Editor/IDE, Office, System, and Other.
+- **Readable descriptions**: Common apps include a short description so you know what each process does at a glance.
+- **Single-process shutdown**: Terminate a specific process by PID directly from the CLI.
+- **Graceful shutdown**: Uses `SIGTERM` on Unix-like systems for a more graceful stop when possible.
+- **Cross-platform**: Works on **Windows**, **macOS**, and **Linux**.
 
 ## Installation
+
 ```bash
 npm install -g logggggoff
 ```
 
 ## Usage
 
-Displays options for the package:
+After installing globally, use the `logggggoff` command in your terminal.
+
+### List running processes
+
+This is the default behavior when no subcommand is provided:
+
 ```bash
-logggggoff 
+logggggoff
 ```
+
+Or explicitly:
+
+```bash
+logggggoff list
+```
+
+You will see a categorized, color-coded list of running processes:
+
+```text
+Logggggoff Process List
+
+Running Processes:
+1. chrome (PID: 1234) - Google Chrome web browser. [Browser]
+2. code (PID: 5678) - Visual Studio Code editor. [Editor/IDE]
+...
+```
+
+### Kill a specific process by PID
+
+To terminate a single process by its PID:
+
+```bash
+logggggoff 525 run
+```
+
+This will attempt to gracefully stop the process with PID `525` and print a success or error message.
+
+> **Note**: Use this carefully. Always double-check the PID before terminating a process.
+
+## Tags
+
+This package is discoverable on npm using the following tags:
+
+- **cli**
+- **logoff**
+- **process**
+- **process-logger**
+- **productivity**
+- **shutdown**
+- **cross-platform**
+- **developer-tool**
+- **the-rise-collection**
+- **processLogger**
+
+## Links
+
+- **Homepage**: [processLogger – THE RISE COLLECTION](https://www.therisecollection.co/portfolio/processlogger)
+- **npm**: [`logggggoff`](https://www.npmjs.com/package/logggggoff)
+- **GitHub**: [`TheRiseCollection/logg-off-plugin`](https://github.com/TheRiseCollection/logg-off-plugin)
+

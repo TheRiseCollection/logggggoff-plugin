@@ -3,6 +3,7 @@ const psList = require('ps-list');
 const chalk = require('chalk');
 const { exec } = require('child_process');
 const commander = require('commander');
+const { version, description } = require('./package.json');
 const program = new commander.Command();
 // Process type categories with colors
 const PROCESS_TYPES = {
@@ -123,8 +124,8 @@ async function killSpecificProcess(pid) {
 }
 // Set up commander
 program
-    .version('1.0.0')
-    .description('A colorful, cross-platform CLI tool to list processes or terminate a specific process by PID');
+    .version(version)
+    .description(description || 'A colorful, cross-platform CLI tool to list processes or terminate a specific process by PID');
 program
     .command('list')
     .description('Display all running processes with descriptions and types')
