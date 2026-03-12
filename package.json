@@ -1,6 +1,6 @@
 {
   "name": "logggggoff",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A colorful, cross-platform CLI tool to list and log off running processes.",
   "main": "index.js",
   "bin": {
